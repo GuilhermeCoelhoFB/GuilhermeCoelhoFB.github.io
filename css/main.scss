@@ -1,0 +1,233 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vw;
+  text-align: center;
+}
+
+header {
+  background: lightgreen;
+  padding: 0.3rem;
+  margin-bottom: 03rem;
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .searchEl {
+      display: flex;
+      justify-content: space-between;
+      img {
+        min-width: 20px;
+        max-width: 10vh;
+        flex-grow: 1;
+      }
+    }
+    a {
+      text-decoration: none;
+      padding: 0.3rem;
+    }
+    input {
+      padding: 0.7rem;
+    }
+  }
+}
+
+main {
+  button {
+    padding: 1.5vh;
+    margin: 1vw 0;
+  }
+  section {
+    margin: 8rem 0;
+  }
+  padding: 0 10vw;
+  h2 {
+    text-align: left;
+  }
+  #personal div {
+    display: flex;
+    flex-wrap: wrap;
+    #picGuilherme {
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin: 0 2.5rem 1rem 2.5rem;
+      max-height: 45vh;
+      min-height: 20vh;
+    }
+    .personalContainer {
+      flex-direction: column;
+      text-align: left;
+      max-width: 80vw;
+      min-width: 300px;
+      flex: 1;
+
+      .socialTextContainer {
+        display: flex;
+        flex-direction: column;
+      }
+      #personalTextContainer {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+      p {
+        padding: 1rem 0.5rem;
+      }
+      #socialContainer {
+        .socialImg {
+          max-height: 15vh;
+          min-height: 5vh;
+          margin: 1rem;
+        }
+      }
+    }
+  }
+
+  .containerProjects {
+    .titleContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .projImgContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 0.5rem 1rem 0.5rem 1rem;
+    }
+
+    .projImgEl {
+      display: flex;
+      justify-content: space-between;
+      flex: 1;
+      flex-direction: column;
+      max-width: 300px;
+      min-width: 300px;
+      margin: 1rem 0.5rem;
+    }
+  }
+
+  section #moreProj {
+    float: right;
+    justify-content: flex-end;
+  }
+
+  #exp {
+    ul li {
+      list-style-type: none;
+    }
+    .expEl {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 1rem;
+      div {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        padding: 10px;
+        text-align: left;
+        min-width: 300px;
+        p {
+          margin: 3vw 0;
+        }
+        h4 {
+          opacity: 0.5;
+        }
+      }
+
+      .expImg {
+        max-width: 25vh;
+        min-width: 240px;
+        justify-content: flex-start;
+      }
+    }
+    button {
+      float: right;
+    }
+  }
+
+  #repo {
+    #repoAll {
+      margin: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      .repoUnit {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+        min-height: 400px;
+        max-height: 30vh;
+        text-align: left;
+        padding-top: 0.5rem;
+        min-width: 400px;
+        max-width: 10vh;
+        flex-grow: 1;
+        a {
+          width: 6rem;
+        }
+        .repoImg {
+          margin: 1rem;
+          height: 8vh;
+        }
+        .repoDesc {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          margin: 1rem;
+          p {
+            margin: 0.5rem 0;
+          }
+        }
+      }
+    }
+    button {
+      float: right;
+    }
+  }
+
+  #conteudo {
+    #conteudoContainer {
+      margin: 1.5rem;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      align-content: space-around;
+
+      .conteudoUnit {
+        max-width: 40vh;
+        min-width: 20rem;
+
+        iframe {
+          width: 100%;
+        }
+        p {
+          text-align: left;
+          padding: 0.5rem 0;
+        }
+      }
+    }
+    button {
+      float: right;
+    }
+  }
+}
+
+footer {
+  background: lightgreen;
+  padding: 3rem;
+}
