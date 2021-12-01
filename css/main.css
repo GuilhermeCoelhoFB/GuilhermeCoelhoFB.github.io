@@ -92,6 +92,7 @@ main #personal div #picGuilherme {
   margin: 0 2.5rem 1rem 2.5rem;
   max-height: 45vh;
   min-height: 20vh;
+  border-radius: 10%;
 }
 
 main #personal div .personalContainer {
@@ -105,6 +106,15 @@ main #personal div .personalContainer {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+main #personal div .personalContainer #git-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 2.5rem 1rem 2.5rem;
+  max-width: 80vw;
+  min-width: 300px;
 }
 
 main #personal div .personalContainer .socialTextContainer {

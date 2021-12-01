@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/main.css" />
-    <title>Personal Profile</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Profile</title>
   </head>
 
   <body>
@@ -28,66 +28,13 @@
             value=""
             placeholder="Pesquisar..."
           />
-          <img src="/img/search-svgrepo-com.svg" alt="" />
+          <img src="img/search-svgrepo-com.svg" alt="" />
         </div>
       </nav>
     </header>
 
     <main>
-      <section id="personal">
-        <div>
-          <img
-            id="picGuilherme"
-            src="https://media-exp1.licdn.com/dms/image/C4E03AQFCxuzvc7BKwA/profile-displayphoto-shrink_800_800/0/1621270207007?e=1638403200&v=beta&t=oQWWu-kkgXARUQjwXP1RgwUrfUB5C7_r2qZPGc8MmKw"
-            alt=""
-          />
-          <div class="personalContainer">
-            <h2>Guilherme Batista Fernandes Coelho</h2>
-            <div id="personalTextContainer">
-              <p>
-                <strong>Sobre mim:</strong> Estou começando minha carreira como
-                Técnico de Informática, com muita experiência técnica,
-                atualmente trabalhando como desenvolvedor back-end na Monnos.
-                Com a excelente experiência acadêmica adquirida no CEFET-MG,
-                participei da Olimpíada Brasileira de Informática, de eventos
-                acadêmicos na META (Mostra Específica de Trabalhos e Aplicações
-                CEFET-MG), na Semana C&T (Semana de Ciência e Tecnologia) e
-                reconhecido duas vezes através de premiação na Maratona Samsung
-                Unicef, pela criação de um aplicativo e um jogo educacionais.
-                Atualmente graduando em Sistemas de Informação na PUC de Minas
-                Gerais.
-              </p>
-              <div class="socialTextContainer">
-                <h3>Redes Sociais</h3>
-                <div id="socialContainer">
-                  <a
-                    target="_blank"
-                    href="https://www.github.com/GuilhermeCoelhoFB"
-                    ><img
-                      class="socialImg"
-                      src="/img/github-svgrepo-com.svg"
-                      alt=""
-                  /></a>
-                  <a
-                    target="_blank"
-                    href="https://www.linkedin.com/in/guilherme-fernandes-coelho/"
-                    ><img
-                      class="socialImg"
-                      src="/img/linkedin-svgrepo-com.svg"
-                      alt=""
-                  /></a>
-                  <a target="_blank" href="https://twitter.com/"
-                    ><img
-                      class="socialImg"
-                      src="/img/twitter-svgrepo-com.svg"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section id="personal"></section>
 
       <section id="proj" class="containerProjects">
         <div class="titleContainer">
@@ -103,11 +50,11 @@
         </div>
         <div class="projImgContainer">
           <div class="projImgEl">
-            <img src="/img/hm.png" alt="" />
+            <img src="img/hm.png" alt="" />
             <h4>Home Monitor (TCC Cefet) - 2021</h4>
           </div>
           <div class="projImgEl">
-            <img src="/img/pj1.png" alt="" />
+            <img src="img/pj1.png" alt="" />
             <h4>Site para disciplina DIW - 2021</h4>
           </div>
         </div>
@@ -157,60 +104,8 @@
       </section>
 
       <section id="repo">
-        <h2>Repositórios Github</h2>
-        <div id="repoAll">
-          <div class="repoUnit">
-            <a
-              target="_blank"
-              href="https://github.com/GuilhermeCoelhoFB/swapi-planets-api"
-            >
-              <img class="repoImg" src="/img/folder-svgrepo-com.svg" alt="" />
-            </a>
-            <div class="repoDesc">
-              <h3>Swapi Planets</h3>
-              <p>
-                Swapi Planets é uma APIRestful que utiliza SpringBoot, podendo
-                ser facilmente construída com Docker. Sua função é executar um
-                CRUD de planetas do StarWars.
-              </p>
-              <h4>Atualizado em: Agosto/2021</h4>
-            </div>
-          </div>
-
-          <div class="repoUnit">
-            <a
-              target="_blank"
-              href="https://github.com/GuilhermeCoelhoFB/projeto-sds3"
-            >
-              <img class="repoImg" src="/img/folder-svgrepo-com.svg" alt="" />
-            </a>
-            <div class="repoDesc">
-              <h3>projeto-sds3</h3>
-              <p>
-                Aplicação simples desenvolvida em ReactJs e SpringBoot, é um
-                site de dados advindos do BD que compõe um front-end.
-              </p>
-              <h4>Atualizado em: Maio/2021</h4>
-            </div>
-          </div>
-
-          <div class="repoUnit">
-            <a
-              target="_blank"
-              href="https://github.com/GuilhermeCoelhoFB/AddressApp"
-            >
-              <img class="repoImg" src="/img/folder-svgrepo-com.svg" alt="" />
-            </a>
-            <div class="repoDesc">
-              <h3>Address App</h3>
-              <p>
-                Projeto em Java capaz de realizar um CRUD via terminal, escrito
-                conforme os padrões de projeto da POO.
-              </p>
-              <h4>Atualizado em: Fevereiro/2021</h4>
-            </div>
-          </div>
-        </div>
+        <h2>Repositórios Github (Obtidos via API)</h2>
+        <div id="repoAll"></div>
         <button>Carregar mais repositórios</button>
       </section>
 
@@ -262,5 +157,6 @@
       </p>
       <!-- <img src="https://meuvestibular.com.br/wp-content/uploads/2018/10/5a6b08d7acc05.jpg" alt="Logo Puc minas">-->
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>
